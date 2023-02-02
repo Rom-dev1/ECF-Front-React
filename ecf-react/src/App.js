@@ -1,9 +1,7 @@
-import logo from './logo.svg';
-
 
 function App() {
   return (
-   <h1>bonjour</h1>
+   <h1>hello</h1>
   );
 }
 

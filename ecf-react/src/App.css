@@ -1,0 +1,8 @@
+.container{
+  width: 76%;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+}
