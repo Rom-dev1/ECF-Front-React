@@ -11,7 +11,7 @@ export default function DisplayMenu() {
         <div className='container flex'>
             
             {meals.map((item, index) =>
-                <div className='dish'>
+                <div key={index} className='dish'>
                     <img src={item.imageSrc} alt="" />
                     <Link to={`/commande/${item.title}`}><span id='hide'>Commander</span></Link>
                     <h2 key={index}>{item.title}</h2>
