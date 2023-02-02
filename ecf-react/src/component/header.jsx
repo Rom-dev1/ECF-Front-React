@@ -6,7 +6,6 @@ export default function Header(){
                 <h1>Découvrez notre</h1>
                 <h1>menu.</h1>
             </div>
-            
             <nav>
                 <ul className="flex">
                     <li>Tout</li>

@@ -1,5 +1,6 @@
 body{
   font-family: 'inter', sans-serif;
+  color: #243e63;
 }
 
 .container{
@@ -44,6 +45,8 @@ body{
 .header nav{
   width: 30%;
   align-self: center;
+  background-color:#edf2f7;
+  border-radius: 5px;
 }
 .header ul {
   justify-content: space-between;
@@ -57,6 +60,12 @@ body{
   padding: 10px 20px;
 }
 
+.header li:hover{
+  background-color: #6415ff;
+  color: white;
+  border-radius: 5px;
+}
+
 .dish{
   display: flex;
   flex-direction: column;
@@ -67,11 +76,37 @@ body{
   padding-bottom: 10px;
 }
 
+.dish:hover img{
+  opacity: 0.5;
+}
+
+#hide{
+  position: relative;
+  z-index: -2;
+}
+
+.dish:hover #hide{
+  width: 35%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 0;
+  top: -150px;
+  z-index: 4;
+  opacity: 1;
+  background-color: #6415ff;
+  padding: 20px 30px;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+  opacity: 1.5;
+}
+
 .dish img{
   width: 420px;
   height: 300px;
   border-radius: 5px 5px 0 0 ;
 }
+
 
 .dish h2, span{
   padding: 0 20px ;
@@ -80,6 +115,11 @@ body{
 .dish h2 {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.dish:hover h2 {
+  margin-top: -20px;
+  color: #6415ff;
 }
 
 .dish span{
