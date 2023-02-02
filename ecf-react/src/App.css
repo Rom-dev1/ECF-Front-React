@@ -1,3 +1,7 @@
+body{
+  font-family: 'inter', sans-serif;
+}
+
 .container{
   width: 76%;
   margin: auto;
@@ -5,4 +9,40 @@
 
 .flex{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dish{
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  border-radius: 15px;
+  background-color: #edf2f6;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.dish img{
+  width: 420px;
+  height: 300px;
+  border-radius: 5px 5px 0 0 ;
+}
+
+.dish h2, span{
+  padding: 0 20px ;
+}
+
+.dish h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dish > span{
+  margin-bottom: 20px;
+}
+
+.dish span:last-child{
+  font-weight: 900;
+  font-size: 22px;
 }
