@@ -19,9 +19,9 @@ export default function DisplayMenu() {
         <div className='container flex'>
             
             {meals.map((item, index) =>
-                <div className='dish' onMouseEnter={addHover}>
+                <div className='dish'>
                     <img src={item.imageSrc} alt="" />
-                    <span id='hide'>Commander</span>
+                    <span id='hide' onClick={addHover}>Commander</span>
                     <h2 key={index}>{item.title}</h2>
                     <span>{item.content}</span>
                     <span>{item.price}</span>
