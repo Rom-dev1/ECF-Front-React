@@ -2,14 +2,14 @@ import { useState } from 'react'
 import meals from '../meals.json'
 import OrderSucess from './orderSucess'
 import App from '../App'
+import { Link, useParams } from 'react-router-dom'
 
 export default function DisplayMenu() {
 
-    let [hover, setHover] = useState("")
+    let params =useParams()
 
-    const addHover = () => {
-        hover = "hover"
-        setHover(hover)
+    const order = () => {
+        
         console.log('coucou')
     }
 
@@ -23,7 +23,7 @@ export default function DisplayMenu() {
             {meals.map((item, index) =>
                 <div className='dish'>
                     <img src={item.imageSrc} alt="" />
-                    <span id='hide' onClick={<OrderSucess/>}>Commander</span>
+                    <Link to={`/commande/${item.title}`}><span id='hide' onClick={order}>Commander</span></Link>
                     <h2 key={index}>{item.title}</h2>
                     <span>{item.content}</span>
                     <span>{item.price}</span>
