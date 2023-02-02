@@ -91,6 +91,7 @@ body{
   margin: auto;
   margin-bottom: 0;
   top: -150px;
+  left: 115px;
   z-index: 4;
   opacity: 1;
   background-color: #6415ff;
@@ -119,7 +120,7 @@ body{
 }
 
 .dish:hover h2 {
-  margin-top: -20px;
+  margin-top: 20px;
   color: #6415ff;
 }
 
@@ -132,4 +133,18 @@ body{
   font-weight: 900;
   font-size: 22px;
   color: black;
+}
+
+.contentOrderSucess{
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+#titleOrder{
+  font-size: 48px;
+  color: hwb(177deg 22% 30%);
+  font-weight: 400;
 }

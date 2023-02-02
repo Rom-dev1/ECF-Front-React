@@ -17,9 +17,8 @@ export default function OrderSucess(){
     return(
        <>
            <App />
-           <div>
-              <h1>Vous avez commandé le repas {dish.title}</h1>
-              
+           <div className="contentOrderSucess flex">
+              <h1 id="titleOrder">Vous avez commandé le repas {dish.title}</h1>
               <img src={dish.imageSrc}/>
            </div>
        </>
