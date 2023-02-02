@@ -13,14 +13,58 @@ body{
   justify-content: space-between;
 }
 
+
+.header{
+  padding: 30px;
+  margin-top: 80px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+}
+
+.title  h1:first-child{
+  margin-right: 20px;
+}
+
+.title h1:last-child{
+  background-color: #6415ff;
+  padding: 0 20px;
+  transform:  skewX(-10deg);
+  color: white;
+  display: inline-block;
+}
+.header h1{
+  font-weight: 900;
+  font-size: 72px;
+  margin: 0 
+}
+
+.header nav{
+  width: 30%;
+  align-self: center;
+}
+.header ul {
+  justify-content: space-between;
+  list-style: none;
+  font-size: 22px;
+  margin: 0;
+  padding: 10px;
+}
+
+.header li{
+  padding: 10px 20px;
+}
+
 .dish{
   display: flex;
   flex-direction: column;
   width: 22%;
   border-radius: 15px;
-  background-color: #edf2f6;
+  background-color: #edf2f7;
   margin-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .dish img{
@@ -38,11 +82,13 @@ body{
   margin-bottom: 10px;
 }
 
-.dish > span{
+.dish span{
   margin-bottom: 20px;
+  color: #718096;
 }
 
 .dish span:last-child{
   font-weight: 900;
   font-size: 22px;
+  color: black;
 }
