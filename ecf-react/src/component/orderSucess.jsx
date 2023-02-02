@@ -9,7 +9,6 @@ export default function OrderSucess(){
     let feetmenu =() => {
         let dish = meals.find(dish => dish.title === params.title)
         setDish(dish)
-        console.log(dish)
     }
 
     useEffect(() => feetmenu(), [])
