@@ -15,7 +15,7 @@ root.render(
         <Route path="/" element ={<App />} />
         <Route index element ={<DisplayMenu/>} />
         <Route path="/commande/:title" element={<OrderSucess/>} />
-        <Route path="/repas/:type" element={<Meat/>} />
+        <Route path="/repas/:viande" element={<Meat/>} />
       </Routes>
     </BrowserRouter>
   </>
