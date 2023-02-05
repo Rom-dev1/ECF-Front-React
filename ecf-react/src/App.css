@@ -66,6 +66,11 @@ body{
   border-radius: 5px;
 }
 
+#link{
+  text-decoration: none;
+  color: #243e63;
+}
+
 .dish{
   display: flex;
   flex-direction: column;
