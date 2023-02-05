@@ -114,6 +114,29 @@ body{
   border-radius: 5px 5px 0 0 ;
 }
 
+.rating{
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  margin: 0;
+  bottom: 10px;
+  background-color: white;
+  border-radius: 20px;
+  width: 30%;
+}
+
+.dish .rating span{
+  margin: 0;
+  padding: 6px;
+}
+
+#img{
+  position: relative;
+}
+
+#img svg{
+  width: 25%;
+}
 
 .dish h2, span{
   padding: 0 20px ;
@@ -133,6 +156,7 @@ body{
   margin-bottom: 20px;
   color: #718096;
 }
+
 
 .dish span:last-child{
   font-weight: 900;
