@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useParams } from "react"
 import meals from '../meals.json'
+
 import { Link } from "react-router-dom"
 import App from "../App"
-export default function Meat(){
-    
-    let [meat, setMeat] = useState([])
+export default function Vegetable(){
+
+    let [vegetable, setVegetable] = useState([])
     let feetmenu =() => {
-        let meat = meals.filter(meat => meat.type.length < 5)
-        setMeat(meat)
-        console.log("cocuou")
+        let vegetable = meals.filter(vegetable => vegetable.type.length >= 6)
+        setVegetable(vegetable)
     }
 
     useEffect(() => feetmenu(), [])
@@ -16,7 +16,7 @@ export default function Meat(){
        <>
             <App/>
             <div className='container flex'>
-                {meat.map((item, index) =>
+                {vegetable.map((item, index) =>
                     <div className='dish'>
                         <img src={item.imageSrc} alt="" />
                         <Link to={`/commande/${item.title}`}><span id='hide'>Commander</span></Link>

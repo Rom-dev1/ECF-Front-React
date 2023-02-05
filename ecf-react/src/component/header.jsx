@@ -6,13 +6,13 @@ export default function Header(){
         <div className="container flex header">
             <div className="title">
                 <h1>Découvrez notre</h1>
-                <Link to="/"><h1>menu.</h1></Link>
+                <h1>menu.</h1>
             </div>
             <nav>
                 <ul className="flex">
-                    <li>Tout</li>
-                    <Link to="/repas/viande"><li>viandes</li></Link>
-                    <li>Legumes</li>
+                    <Link to="/" id="link"><li>Tout</li></Link>
+                    <Link to="/repas/viande" id="link"><li>viandes</li></Link>
+                    <Link to="/vege/legumes" id="link"><li>Legumes</li></Link>
                 </ul>
     
             </nav>
