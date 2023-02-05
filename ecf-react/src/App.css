@@ -95,8 +95,8 @@ body{
   position: relative;
   margin: auto;
   margin-bottom: 0;
-  top: -150px;
-  left: 115px;
+  top: -120px;
+  left: 60px;
   z-index: 4;
   opacity: 1;
   background-color: #6415ff;
@@ -110,7 +110,7 @@ body{
 
 .dish img{
   width: 100%;
-  max-height: 280px;
+  max-height: 210px;
   border-radius: 5px 5px 0 0 ;
 }
 
@@ -119,11 +119,14 @@ body{
   position: absolute;
   justify-content: space-around;
   margin: 0;
+  padding: 0 10px;
   bottom: 10px;
   background-color: white;
   border-radius: 20px;
-  width: 30%;
+  width: 35%;
+  text-align: center;
 }
+
 
 .dish .rating span{
   margin: 0;
@@ -135,8 +138,9 @@ body{
 }
 
 #img svg{
-  width: 25%;
+  width: 20%;
 }
+
 
 .dish h2, span{
   padding: 0 20px ;
@@ -158,7 +162,13 @@ body{
 }
 
 
-.dish span:last-child{
+.dish span:nth-child(2){
+  font-weight: 900;
+  font-size: 16px;
+  color: black;
+}
+
+.dish span:nth-child(5){
   font-weight: 900;
   font-size: 22px;
   color: black;
