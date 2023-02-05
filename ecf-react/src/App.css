@@ -104,8 +104,8 @@ body{
 }
 
 .dish img{
-  width: 420px;
-  height: 300px;
+  width: 100%;
+  max-height: 280px;
   border-radius: 5px 5px 0 0 ;
 }
 
