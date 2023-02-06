@@ -1,5 +1,5 @@
 
-import meals from '../meals.json'
+import meal from '../meals.json'
 import App from '../App'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ export default function DisplayMenu() {
         <App/>
         <div className='container flex'>
             
-            {meals.map((item, index) =>
+            {meal.map((item, index) =>
                 <div key={index} className='dish'>
                     <div id='img'>
                         <img src={item.imageSrc} alt="" />

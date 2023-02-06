@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 import App from "../App"
 export default function Meat(){
     
-    let [meat, setMeat] = useState([])
+    let [meal, setMeat] = useState([])
     let feetmenu =() => {
-        let meat = meals.filter(meat => meat.type.length < 5)
-        setMeat(meat)
+        let meal = meals.filter(meal => meal.type === "meat")
+        setMeat(meal)
         console.log("cocuou")
     }
 
@@ -16,7 +16,7 @@ export default function Meat(){
        <>
             <App/>
             <div className='container flex'>
-                {meat.map((item, index) =>
+                {meal.map((item, index) =>
                     <div className='dish'>
                         <img src={item.imageSrc} alt="" />
                         <Link to={`/commande/${item.title}`}><span id='hide'>Commander</span></Link>

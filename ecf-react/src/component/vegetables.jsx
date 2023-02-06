@@ -7,7 +7,7 @@ export default function Vegetable(){
 
     let [vegetable, setVegetable] = useState([])
     let feetmenu =() => {
-        let vegetable = meals.filter(vegetable => vegetable.type.length >= 6)
+        let vegetable = meals.filter(vegetable => vegetable.type == "flower")
         setVegetable(vegetable)
     }
 
